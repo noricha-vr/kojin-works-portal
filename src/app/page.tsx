@@ -22,27 +22,28 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   const tagColorClass = "inline-block px-2 py-1 text-xs text-white rounded-full";
   
   return (
-    <div className={`flex flex-col rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg ${getProjectColor(index)}`}>
-      {/* タグ表示エリア */}
-      <div className="p-3 flex flex-wrap gap-2">
-        {project.tags && project.tags.map((tag) => (
-          <span 
-            key={tag} 
-            className={`${tagColorClass} bg-opacity-30 backdrop-blur-sm`}
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-
-      {/* メインアイコン表示エリア */}
-      <div className="flex justify-center items-center p-8">
-        <div className="w-24 h-24 relative rounded-full bg-white bg-opacity-30 flex items-center justify-center">
-          <img 
-            src={project.icon} 
-            alt={`${project.title}のアイコン`} 
-            className="w-16 h-16 object-contain"
-          />
+    <div className="flex flex-col rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
+      {/* カバー画像エリア */}
+      <div className={`relative ${getProjectColor(index)} h-60`}>
+        {/* タグ表示エリア */}
+        <div className="absolute top-0 left-0 right-0 p-3 flex flex-wrap gap-2 z-10">
+          {project.tags && project.tags.map((tag) => (
+            <span 
+              key={tag} 
+              className={`${tagColorClass} bg-opacity-30 backdrop-blur-sm`}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+        
+        {/* プロジェクト番号表示 */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-white text-8xl font-bold opacity-70 flex items-center justify-center">
+            <span className="border-4 border-white border-opacity-40 w-32 h-32 flex items-center justify-center">
+              {index + 1}
+            </span>
+          </div>
         </div>
       </div>
       
@@ -73,50 +74,52 @@ export default function Home() {
   const projects = loadProjects();
 
   return (
-    <div >
-    <div className=" bg-white">
-      {/* ヒーローセクション - ミニマルデザイン */}
-      <div className="flex flex-col items-center justify-center py-36 px-4">
-        <h1 className="text-7xl font-bold text-gray-900 mb-6 text-center">
-          個人開発
-        </h1>
-        <p className="text-orange-500 text-xl">
-          {projects.length}件のプロジェクトを公開中
-        </p>
-          </div>
-      </div>
-<div className="bg-gray-50">
-      <div className="container mx-auto px-4 py-12">
-        {/* セクションヘッダー */}
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-          アプリ一覧
-        </h2>
-        {projects.length === 0 ? (
-          // プロジェクトがない場合
-          <div className="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow text-center">
-            <p className="text-gray-600 mb-4">
-              プロジェクトデータが見つかりませんでした。
-            </p>
-            <p className="text-sm text-gray-500">
-              data/apps.yaml ファイルを確認してください。
-            </p>
-          </div>
-        ) : (
-          // プロジェクト一覧を表示
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
-            ))}
-          </div>
-        )}
+    <div>
+      <div className="bg-white">
+        {/* ヒーローセクション - ミニマルデザイン */}
+        <div className="flex flex-col items-center justify-center py-36 px-4">
+          <h1 className="text-7xl font-bold text-gray-900 mb-6 text-center">
+            個人開発
+          </h1>
+          <p className="text-orange-500 text-xl">
+            {projects.length}件のプロジェクトを公開中
+          </p>
+        </div>
       </div>
       
-      <footer className="mt-20 py-6 border-t border-gray-200">
-        <div className="container mx-auto px-4 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Kojin Works. All rights reserved.</p>
+      <div className="bg-gray-50">
+        <div className="container mx-auto px-4 py-12">
+          {/* セクションヘッダー */}
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            アプリ一覧
+          </h2>
+
+          {projects.length === 0 ? (
+            // プロジェクトがない場合
+            <div className="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow text-center">
+              <p className="text-gray-600 mb-4">
+                プロジェクトデータが見つかりませんでした。
+              </p>
+              <p className="text-sm text-gray-500">
+                data/apps.yaml ファイルを確認してください。
+              </p>
+            </div>
+          ) : (
+            // プロジェクト一覧を表示
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} project={project} index={index} />
+              ))}
+            </div>
+          )}
         </div>
-      </footer>
+        
+        <footer className="mt-20 py-6 border-t border-gray-200">
+          <div className="container mx-auto px-4 text-center text-gray-500">
+            <p>&copy; {new Date().getFullYear()} Kojin Works. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
     </div>
-    </div >
   );
 }

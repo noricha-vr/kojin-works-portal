@@ -4,7 +4,7 @@
 - title: "すごいタスク管理アプリ"
   link: "https://draw.kojin.works"
   description: "日々のタスクを効率的に管理し、生産性を向上させるための革新的なアプリです。"
-  icon: "/icons/draw_app_icon.png"
+  cover: "/icons/cover_blue.png"
   tags:
     - "生産性"
     - "React"
@@ -13,7 +13,7 @@
 - title: "写真共有SNS"
   link: "https://your-username.github.io/todomaster/"
   description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォーム。"
-  icon: "/icons/todomaster_icon.svg"
+  cover: "/icons/cover_cyan.png"
   tags:
     - "SNS"
     - "Vue.js"
@@ -22,7 +22,7 @@
 - title: "レシピ検索エンジン"
   link: "https://recipe.kojin.works"
   description: "豊富なレシピデータベースから、今日の献立にぴったりの料理を簡単に見つけられます。"
-  icon: "/icons/recipe_icon.png"
+  cover: "/icons/cover_amber.png"
   tags:
     - "料理"
     - "Python"
@@ -31,7 +31,7 @@
 - title: "オンライン学習プラットフォーム"
   link: "https://learning.kojin.works"
   description: "様々な分野のコースをオンラインで受講し、新しいスキルを習得できます。"
-  icon: "/icons/learning_icon.png"
+  cover: "/icons/cover_emerald.png"
   tags:
     - "教育"
     - "Angular"
@@ -40,7 +40,7 @@
 - title: "天気予報ウィジェット"
   link: "https://weather.kojin.works"
   description: "シンプルで正確な天気情報を提供するウィジェット。あなたの街の天気をいつでも確認。"
-  icon: "/icons/weather_icon.png"
+  cover: "/icons/cover_pink.png"
   tags:
     - "ユーティリティ"
     - "JS"
@@ -48,7 +48,7 @@
 - title: "個人ブログエンジン"
   link: "https://blog.kojin.works"
   description: "Markdown対応の軽量ブログエンジン。手軽に自分の考えを発信できます。"
-  icon: "/icons/blog_icon.png"
+  cover: "/icons/cover_purple.png"
   tags:
     - "ブログ"
     - "Next.js" 

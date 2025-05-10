@@ -19,10 +19,10 @@ export interface Project {
   description: string;
   
   /**
-   * プロジェクトのアイコン画像パス
+   * プロジェクトのカバー画像パス
    * publicディレクトリからの絶対パス
    */
-  icon: string;
+  cover: string;
   
   /**
    * プロジェクトに関連するタグ（任意）
