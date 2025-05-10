@@ -24,7 +24,7 @@ export function loadProjects(): Project[] {
     
     // 必須フィールドの存在チェック
     return projects.filter(project => {
-      const isValid = project.title && project.link && project.description && project.icon;
+      const isValid = project.title && project.link && project.description && project.cover;
       if (!isValid) {
         console.warn('無効なプロジェクトデータ:', project);
       }
