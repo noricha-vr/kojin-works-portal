@@ -91,17 +91,24 @@ export default function Home() {
 
   return (
     <div>
-      <div className="bg-white">
-        {/* ヒーローセクション - ミニマルデザイン */}
-        <div className="flex flex-col items-center justify-center py-36 px-4">
-          <h1 className="text-7xl font-bold text-gray-900 mb-6 text-center">
-            個人開発
+      {/* 新しいヒーローセクション */}
+      <section className="bg-slate-50 text-slate-800 min-h-screen flex items-center justify-center pt-16">
+        <div className="text-center p-6 md:p-12">
+          <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight text-slate-900">
+            個人開発<br className="md:hidden" /> <span className="text-indigo-600">アイデアをカタチに</span>
           </h1>
+          <p className="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto text-slate-600">
+            シンプルながらも機能的なソリューションで、最高のユーザー体験を追求します。
+          </p>
+          <a href="#projects"
+            className="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-indigo-700 transition duration-300 shadow-md transform hover:scale-105">
+            プロジェクトを見る
+          </a>
         </div>
-      </div>
+      </section>
       
       <div className="bg-gray-50">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 py-12" id="projects">
           {/* セクションヘッダー */}
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             アプリ一覧
