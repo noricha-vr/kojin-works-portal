@@ -21,8 +21,8 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight text-slate-900">
           個人開発<br className="md:hidden" /> <span className="text-indigo-600">アイデアをカタチに</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto text-slate-600">
-          シンプルながらも機能的なソリューションで、最高のユーザー体験を追求します。
+              <p className="text-lg md:text-xl lg:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto">
+                  「あったらいいな」を、世界の「なくてはならない」ものに。
         </p>
         <a href="#projects"
           onClick={scrollToProjects}
