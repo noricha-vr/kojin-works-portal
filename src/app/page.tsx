@@ -74,20 +74,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-12">
-        {/* メインヘッダー */}
-        <header className="mb-20 text-center">
-          <h1 className="text-6xl font-bold text-gray-900 mb-6">
-            個人開発
-          </h1>
-          <p className="text-xl text-red-500 mb-2">
-            これまでに作成したアプリを紹介します
-          </p>
-          <p className="text-sm text-gray-600">
-            {/* サブタイトル */}
-          </p>
-        </header>
+      {/* ヒーローセクション - ミニマルデザイン */}
+      <div className="flex flex-col items-center justify-center py-36 px-4">
+        <h1 className="text-7xl font-bold text-gray-900 mb-6 text-center">
+          個人開発
+        </h1>
+        <p className="text-orange-500 text-xl">
+          {projects.length}件のプロジェクトを公開中
+        </p>
+      </div>
 
+      <div className="container mx-auto px-4 py-12">
         {/* セクションヘッダー */}
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
           公開中のアプリ一覧
