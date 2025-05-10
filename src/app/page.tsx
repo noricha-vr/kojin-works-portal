@@ -18,19 +18,35 @@ function getProjectColor(index: number): string {
  * プロジェクトカード用のコンポーネント
  */
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  // プロジェクトタグの表示色をカスタマイズ
-  const tagColorClass = "inline-block px-2 py-1 text-xs text-white rounded-full";
+  // 各プロジェクトの背景色クラスを取得
+  const bgColorClass = getProjectColor(index);
+  
+  // タグの色をプロジェクト色に基づいて設定
+  const getTagColor = () => {
+    // 画像に合わせて、白背景と青系のテキストに変更
+    if (bgColorClass.includes('blue')) return 'text-blue-600 bg-white border-blue-200';
+    if (bgColorClass.includes('cyan')) return 'text-cyan-600 bg-white border-cyan-200';
+    if (bgColorClass.includes('amber')) return 'text-amber-600 bg-white border-amber-200';
+    if (bgColorClass.includes('emerald')) return 'text-emerald-600 bg-white border-emerald-200';
+    if (bgColorClass.includes('pink')) return 'text-pink-600 bg-white border-pink-200';
+    if (bgColorClass.includes('purple')) return 'text-purple-600 bg-white border-purple-200';
+    return 'text-gray-600 bg-white border-gray-200'; // デフォルト
+  };
+  
+  // プロジェクトタグの表示色をカスタマイズ - 独立したバッチスタイル
+  const tagColorClass = "inline-block px-3 py-1 text-xs font-semibold rounded-full shadow-sm border";
+  const tagColors = getTagColor();
   
   return (
     <div className="flex flex-col rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
       {/* カバー画像エリア */}
-      <div className={`relative ${getProjectColor(index)} h-60`}>
+      <div className={`relative ${bgColorClass} h-60`}>
         {/* タグ表示エリア */}
-        <div className="absolute top-0 left-0 right-0 p-3 flex flex-wrap gap-2 z-10">
+        <div className="absolute top-2 left-2 right-2 flex flex-wrap gap-2 z-10">
           {project.tags && project.tags.map((tag) => (
             <span 
               key={tag} 
-              className={`${tagColorClass} bg-opacity-30 backdrop-blur-sm`}
+              className={`${tagColorClass} ${tagColors}`}
             >
               {tag}
             </span>
@@ -81,9 +97,6 @@ export default function Home() {
           <h1 className="text-7xl font-bold text-gray-900 mb-6 text-center">
             個人開発
           </h1>
-          <p className="text-orange-500 text-xl">
-            {projects.length}件のプロジェクトを公開中
-          </p>
         </div>
       </div>
       
