@@ -73,7 +73,8 @@ export default function Home() {
   const projects = loadProjects();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div >
+    <div className=" bg-white">
       {/* ヒーローセクション - ミニマルデザイン */}
       <div className="flex flex-col items-center justify-center py-36 px-4">
         <h1 className="text-7xl font-bold text-gray-900 mb-6 text-center">
@@ -82,14 +83,14 @@ export default function Home() {
         <p className="text-orange-500 text-xl">
           {projects.length}件のプロジェクトを公開中
         </p>
+          </div>
       </div>
-
+<div className="bg-gray-50">
       <div className="container mx-auto px-4 py-12">
         {/* セクションヘッダー */}
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-          公開中のアプリ一覧
+          アプリ一覧
         </h2>
-
         {projects.length === 0 ? (
           // プロジェクトがない場合
           <div className="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow text-center">
@@ -116,5 +117,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </div >
   );
 }
