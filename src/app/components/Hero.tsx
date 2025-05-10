@@ -22,7 +22,9 @@ export default function Hero() {
           個人開発<br className="md:hidden" /> <span className="text-indigo-600">アイデアをカタチに</span>
         </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto">
-                  「あったらいいな」を、世界の「なくてはならない」ものに。
+                  「あったらいいな」が、動き出す。<br />
+                  「あったらいいな」の、その先へ。<br />
+                  「あったらいいな」で、世界をもっと面白く。<br />
         </p>
         <a href="#projects"
           onClick={scrollToProjects}
