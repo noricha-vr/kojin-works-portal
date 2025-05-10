@@ -2,6 +2,14 @@
 
 個人開発プロジェクトを一覧で紹介するポータルサイトです。`kojin.works` ドメインのトップページとして機能し、開発者の各プロジェクトへのリンクを提供します。
 
+## リポジトリ
+
+https://github.com/noricha-vr/kojin-works-portal
+
+## デプロイ先
+
+https://kojin.works/
+
 ## 機能
 
 - 個人開発プロジェクトの一覧表示
