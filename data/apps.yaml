@@ -1,0 +1,28 @@
+# kojin.works プロジェクト一覧
+# 個人開発プロジェクトの情報を記載するYAMLファイル
+
+- title: "すごいお絵描きアプリ"
+  link: "https://draw.kojin.works"
+  description: "直感的な操作で誰でも簡単にお絵描きが楽しめます。"
+  icon: "/icons/draw_app_icon.png"
+  tags:
+    - "ツール"
+    - "デザイン"
+    - "Webアプリ"
+
+- title: "タスク管理ツール「TodoMaster」"
+  link: "https://your-username.github.io/todomaster/"
+  description: "GitHub Pagesで公開しているシンプルなタスク管理ツールです。"
+  icon: "/icons/todomaster_icon.svg"
+  tags:
+    - "生産性"
+    - "静的サイト"
+
+- title: "料理レシピ検索"
+  link: "https://recipe.kojin.works"
+  description: "家にある材料から作れるレシピを検索できる便利ツール。"
+  icon: "/icons/recipe_icon.png"
+  tags:
+    - "生活"
+    - "検索"
+    - "Webアプリ" 
