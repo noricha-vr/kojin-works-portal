@@ -39,7 +39,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   const tagColors = getTagColor();
   
   return (
-    <div className="flex flex-col rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
+    <a
+      href={project.link}
+      rel="noopener noreferrer"
+      className="flex flex-col rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg cursor-pointer"
+    >
       {/* カバー画像エリア */}
       <div className={`relative ${bgColorClass} h-60`}>
         {/* タグ表示エリア */}
@@ -67,21 +71,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       {/* プロジェクト情報エリア */}
       <div className="bg-white p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-        <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
-        
-        {/* 外部リンク */}
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800"
-        >
-          アプリを見る
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-          </svg>
-        </a>
+        <h4 className="text-gray-600 mb-4 text-sm">{project.description}</h4>
       </div>
-    </div>
+    </a>
   );
 } 

@@ -1,41 +1,43 @@
 # kojin.works プロジェクト一覧
 # 個人開発プロジェクトの情報を記載するYAMLファイル
 
-- title: "すごいタスク管理アプリ"
-  link: "https://draw.kojin.works"
-  description: "日々のタスクを効率的に管理し、生産性を向上させるための革新的なアプリです。"
+- title: "WebScreen"
+  link: "https://web-screen.net/"
+  description: "VRChatにWebページや、写真、PDFを表示するための動画変換サービスです。"
   cover: "/icons/cover_blue.png"
   tags:
-    - "生産性"
-    - "React"
-    - "Node.js"
+    - "VRChat"
+    - "動画"
+    - "変換"
 
-- title: "写真共有SNS"
-  link: "https://your-username.github.io/todomaster/"
-  description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォーム。"
-  cover: "/icons/cover_cyan.png"
-  tags:
-    - "SNS"
-    - "Vue.js"
-    - "Firebase"
 
-- title: "レシピ検索エンジン"
-  link: "https://recipe.kojin.works"
-  description: "豊富なレシピデータベースから、今日の献立にぴったりの料理を簡単に見つけられます。"
+- title: "VRC技術学術系Hub"
+  link: "https://vrc-ta-hub.com/"
+  description: "VRChatで開催されている技術学術系イベントの情報や過去の発表資料、動画をまとめたポータルサイトです。"
   cover: "/icons/cover_amber.png"
   tags:
     - "料理"
     - "Python"
     - "Django"
 
-- title: "オンライン学習プラットフォーム"
-  link: "https://learning.kojin.works"
-  description: "様々な分野のコースをオンラインで受講し、新しいスキルを習得できます。"
+- title: "あてな印刷"
+  link: "https://atenainsatsu.kojin.works/"
+  description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォーム。"
+  cover: "/cover/cyan.png"
+  tags:
+    - "はがき"
+    - "宛名"
+    - "印刷"
+
+
+- title: "画像モザイク加工ツール"
+  link: "https://mosaic.kojin.works/"
+  description: "モザイク加工ツール ブラウザで簡単画像加工"
   cover: "/icons/cover_emerald.png"
   tags:
-    - "教育"
-    - "Angular"
-    - "MongoDB"
+    - "画像"
+    - "加工"
+    - "モザイク"
 
 - title: "天気予報ウィジェット"
   link: "https://weather.kojin.works"

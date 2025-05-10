@@ -11,7 +11,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
       <div className="container mx-auto px-4 py-12" id="projects">
         {/* セクションヘッダー */}
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-          アプリ一覧
+          プロジェクト一覧
         </h2>
 
         {projects.length === 0 ? (
