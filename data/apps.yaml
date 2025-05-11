@@ -22,7 +22,7 @@
 
 - title: "あてな印刷"
   link: "https://atenainsatsu.kojin.works/"
-  description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォーム。"
+  description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォームです。"
   cover: "/cover/cyan.png"
   tags:
     - "はがき"
@@ -32,16 +32,16 @@
 
 - title: "画像モザイク加工ツール"
   link: "https://mosaic.kojin.works/"
-  description: "モザイク加工ツール ブラウザで簡単画像加工"
+  description: "ブラウザで簡単にモザイク加工ができます。"
   cover: "/icons/cover_emerald.png"
   tags:
     - "画像"
     - "加工"
     - "モザイク"
 
-- title: "天気予報ウィジェット"
-  link: "https://weather.kojin.works"
-  description: "シンプルで正確な天気情報を提供するウィジェット。あなたの街の天気をいつでも確認。"
+- title: "個人開発集会"
+  link: "https://sites.google.com/view/vrc-personal-development/%E3%83%9B%E3%83%BC%E3%83%A0"
+  description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
   cover: "/icons/cover_pink.png"
   tags:
     - "ユーティリティ"
