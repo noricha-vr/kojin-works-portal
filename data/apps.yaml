@@ -44,13 +44,15 @@
   description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
   cover: "/icons/cover_pink.png"
   tags:
-    - "ユーティリティ"
-    - "JS"
+    - "VRChat"
+    - "集会"
+    - "技術"
 
-- title: "個人ブログエンジン"
-  link: "https://blog.kojin.works"
-  description: "Markdown対応の軽量ブログエンジン。手軽に自分の考えを発信できます。"
+
+- title: "経理お助けたい"
+  link: "https://keiriotasuketai.com/"
+  description: "クレジットカードの不明な支払い元を調べるサービスです。"
   cover: "/icons/cover_purple.png"
   tags:
-    - "ブログ"
-    - "Next.js" 
+    - "クレジットカード"
+    - "明細" 
