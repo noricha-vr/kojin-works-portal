@@ -17,6 +17,12 @@
   description: "ブラウザで簡単にモザイク加工ができます。"
   cover: "/cover/mosaic.png"
 
+- title: "バーチャルな茨城で茨城ダッシュ"
+  link: "https://ibaraki-dash.kojin.works/"
+  description: "ブラウザで簡単にモザイク加工ができます。"
+  cover: "/cover/ibaraki-dash.png"
+
+
 - title: "経理お助けたい"
   link: "https://keiriotasuketai.com/"
   description: "クレジットカードの不明な支払い元を調べるサービスです。"
