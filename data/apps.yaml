@@ -5,50 +5,30 @@
   link: "https://web-screen.net/"
   description: "VRChatにWebページや、写真、PDFを表示するための動画変換サービスです。"
   cover: "https://storage.googleapis.com/noricha-public/web-screen/image/og-image/web-screen-ja.webp"
-  tags:
-
-- title: "VRC技術学術系Hub"
-  link: "https://vrc-ta-hub.com/"
-  description: "VRChatで開催されている技術学術系イベントの情報や過去の発表資料、動画をまとめたポータルサイトです。"
-  cover: "https://data.vrc-ta-hub.com/images/twitter-negipan-1600.jpeg"
-  tags:
-    - "料理"
-    - "Python"
-    - "Django"
 
 - title: "あてな印刷"
   link: "https://atenainsatsu.kojin.works/"
   description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォームです。"
   cover: "/cover/atenainsatsu.png"
-  tags:
-    - "はがき"
-    - "宛名"
-    - "印刷"
 
 
 - title: "画像モザイク加工ツール"
   link: "https://mosaic.kojin.works/"
   description: "ブラウザで簡単にモザイク加工ができます。"
   cover: "/cover/mosaic.png"
-  tags:
-    - "画像"
-    - "加工"
-    - "モザイク"
-
-- title: "個人開発集会"
-  link: "https://sites.google.com/view/vrc-personal-development/%E3%83%9B%E3%83%BC%E3%83%A0"
-  description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
-  cover: "/cover/kojinkaihatsu.png"
-  tags:
-    - "VRChat"
-    - "集会"
-    - "技術"
-
 
 - title: "経理お助けたい"
   link: "https://keiriotasuketai.com/"
   description: "クレジットカードの不明な支払い元を調べるサービスです。"
   cover: "/cover/keiriotasuketai.png"
-  tags:
-    - "クレジットカード"
-    - "明細" 
+
+- title: "VRC技術学術系Hub"
+  link: "https://vrc-ta-hub.com/"
+  description: "VRChatで開催されている技術学術系イベントの情報や過去の発表資料、動画をまとめたポータルサイトです。"
+  cover: "https://data.vrc-ta-hub.com/images/twitter-negipan-1600.jpeg"
+
+- title: "個人開発集会"
+  link: "https://sites.google.com/view/vrc-personal-development/%E3%83%9B%E3%83%BC%E3%83%A0"
+  description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
+  cover: "/cover/kojinkaihatsu.png"
+
