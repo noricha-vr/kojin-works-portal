@@ -28,6 +28,12 @@
   description: "クレジットカードの不明な支払い元を調べるサービスです。"
   cover: "/cover/keiriotasuketai.png"
 
+- title: "Twitter Blocker"
+  link: "https://chrome.google.com/webstore/devconsole/41a0cbc6-8ea3-4bb4-bebe-15d39727a8b4/bannejppggodpoeahohfhkamdpegcmao/edit"
+  description: "ブラウザ上のTwitterの閲覧時間を制限し、閲覧時間をグラフで管理できます。"
+  cover: "/cover/twitter-blocker.png"
+
+
 - title: "VRC技術学術系Hub"
   link: "https://vrc-ta-hub.com/"
   description: "VRChatで開催されている技術学術系イベントの情報や過去の発表資料、動画をまとめたポータルサイトです。"
@@ -37,4 +43,9 @@
   link: "https://sites.google.com/view/vrc-personal-development/%E3%83%9B%E3%83%BC%E3%83%A0"
   description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
   cover: "/cover/kojinkaihatsu.png"
+
+- title: "HackType"
+  link: "https://hacktype.kojin.works/"
+  description: "本格的なターミナル画面で繰り広げられるタイピングアドベンチャー。実際のハッキングコマンドを学びながら、サイバーセキュリティの世界を体験できます。"
+  cover: "/cover/hacktype.png"
 
