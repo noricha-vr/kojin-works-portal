@@ -49,3 +49,8 @@
   description: "本格的なターミナル画面で繰り広げられるタイピングアドベンチャー。実際のハッキングコマンドを学びながら、サイバーセキュリティの世界を体験できます。"
   cover: "/cover/hacktype.png"
 
+- title: "Context Generator"
+  link: "https://context-generator.kojin.works/"
+  description: "AIツールに提供するコンテキスト情報を簡単に生成できるツール。プロジェクトの概要や技術仕様を自動的に整理します。"
+  cover: "/cover/context-generator.png"
+
