@@ -54,3 +54,8 @@
   description: "AIツールに提供するコンテキスト情報を簡単に生成できるツール。プロジェクトの概要や技術仕様を自動的に整理します。"
   cover: "/cover/context-generator.png"
 
+- title: "ユートピア"
+  link: "https://utopia.kojin.works/"
+  description: "素直な想いを彩る場所。気持ちをシェアして、みんなで楽しめる新しいSNSサービスです。"
+  cover: "/cover/utopia.png"
+
