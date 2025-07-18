@@ -59,3 +59,8 @@
   description: "素直な想いを彩る場所。気持ちをシェアして、みんなで楽しめる新しいSNSサービスです。"
   cover: "/cover/utopia.png"
 
+- title: "UtaEcho"
+  link: "https://utaecho.kojin.works/"
+  description: "歌声を響かせる新しい体験。音楽を通じて人々をつなぐサービスです。"
+  cover: "/cover/utaecho.png"
+
