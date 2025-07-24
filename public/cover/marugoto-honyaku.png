@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>まるごと翻訳 - 最大5万文字対応の多言語翻訳ツール</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="まるごと翻訳 - 最大5万文字対応の多言語翻訳ツール">
+    <meta name="description" content="論文、技術文書、小説など最大5万文字の長文をまるごと翻訳。日本語・英語・中国語・韓国語・スペイン語・フランス語・ドイツ語・ポルトガル語・ロシア語に対応した無料翻訳サービス。">
+    <meta name="keywords" content="翻訳,無料翻訳,長文翻訳,多言語翻訳,日本語翻訳,英語翻訳,中国語翻訳,韓国語翻訳,論文翻訳,技術文書翻訳">
+    <meta name="author" content="Marugoto Translate">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Japanese">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marugoto-honyaku.kojin.works/">
+    <meta property="og:title" content="まるごと翻訳 - 最大5万文字対応の多言語翻訳ツール">
+    <meta property="og:description" content="論文、技術文書、小説など最大5万文字の長文をまるごと翻訳。10言語対応の無料翻訳サービス。">
+    <meta property="og:image" content="https://marugoto-honyaku.kojin.works/og-image.png">
+    <meta property="og:site_name" content="まるごと翻訳">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marugoto-honyaku.kojin.works/">
+    <meta property="twitter:title" content="まるごと翻訳 - 最大5万文字対応の多言語翻訳ツール">
+    <meta property="twitter:description" content="論文、技術文書、小説など最大5万文字の長文をまるごと翻訳。10言語対応の無料翻訳サービス。">
+    <meta property="twitter:image" content="https://marugoto-honyaku.kojin.works/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3B82F6">
+    
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://marugoto-honyaku.kojin.works/">
+    <meta name="application-name" content="まるごと翻訳">
+    <meta name="apple-mobile-web-app-title" content="まるごと翻訳">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "まるごと翻訳",
+      "description": "最大5万文字の長文をまるごと翻訳できる多言語対応の無料翻訳サービス",
+      "url": "https://marugoto-honyaku.kojin.works",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Marugoto Translate"
+      },
+      "featureList": [
+        "最大50,000文字の長文翻訳",
+        "10言語対応（日本語、英語、中国語、韓国語、スペイン語、フランス語、ドイツ語、ポルトガル語、ロシア語）",
+        "リアルタイム文字数カウント",
+        "翻訳履歴保存機能",
+        "完全無料"
+      ],
+      "screenshot": "https://marugoto-honyaku.kojin.works/og-image.png",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150"
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CwWrTZWO.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BRNiFbRH.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
