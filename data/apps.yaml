@@ -72,7 +72,7 @@
 
 - title: "Claude Code Subagents Workflow"
   link: "https://github.com/noricha-vr/claude-code-subagents-workflow"
-  description: "Claude Code の Subagents を用いた自動実装ワークフロー（Planner→Executor→Reviewer をループする /wf テンプレート）。"
+  description: "Claude Code の Subagents を使った自動実装ワークフローのテンプレート"
   cover: "/cover/claude-code-subagents-workflow.png"
 
 - title: "Video to MP3 Converter"
