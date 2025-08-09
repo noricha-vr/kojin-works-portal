@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '🚀 Claude Code セッション開始\\n利用可能なコマンド: /add-new-app サイトURL、ローカルディレクトリ、GithubリポジトリURL'",
+            "timeout": 2
+          }
+        ]
+      }
+    ]
+  }
+}
