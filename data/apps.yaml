@@ -69,3 +69,9 @@
   description: "長文でも高速翻訳、履歴も自動保存。プログラミング言語が混在していても正確に翻訳できる強力な翻訳ツールです。"
   cover: "/cover/marugoto-honyaku.png"
 
+
+- title: "Claude Code Subagents Workflow"
+  link: "https://github.com/noricha-vr/claude-code-subagents-workflow"
+  description: "Claude Code の Subagents を用いた自動実装ワークフロー（Planner→Executor→Reviewer をループする /wf テンプレート）。"
+  cover: "/cover/claude-code-subagents-workflow.png"
+
