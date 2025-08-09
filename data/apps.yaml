@@ -75,3 +75,8 @@
   description: "Claude Code の Subagents を用いた自動実装ワークフロー（Planner→Executor→Reviewer をループする /wf テンプレート）。"
   cover: "/cover/claude-code-subagents-workflow.png"
 
+- title: "Video to MP3 Converter"
+  link: "https://video-to-mp3-converter.kojin.works/"
+  description: "動画ファイルから音声を抽出し、高品質なMP3に変換する無料のオンラインツール。ブラウザ上で完結し、プライバシーも安全です。"
+  cover: "/cover/video-to-mp3-converter.png"
+
