@@ -80,7 +80,7 @@
   description: "動画ファイルから音声を抽出し、高品質なMP3に変換する無料のオンラインツール。ブラウザ上で完結し、プライバシーも安全です。"
   cover: "/cover/video-to-mp3-converter.png"
 
-- title: "Image Resizer"
+- title: "リサイズくん"
   link: "https://resize.kojin.works/"
   description: "画像をJPEG/PNG/AVIF形式にリサイズする無料オンラインツール。ブラウザ内で完結するため、プライバシーが保護されます。"
   cover: "/cover/image-resizer.png"
