@@ -85,3 +85,8 @@
   description: "画像をJPEG/PNG/AVIF形式にリサイズする無料オンラインツール。ブラウザ内で完結するため、プライバシーが保護されます。"
   cover: "/cover/image-resizer.png"
 
+- title: "ランダムパスワード生成ツール"
+  link: "https://password-generator.kojin.works/"
+  description: "完全クライアントサイドで動作する安全なパスワード生成ツール。Web Crypto APIを使用し、英数字、記号、UUID、HEXなど11種類のパスワードを生成。サーバー送信なし、完全無料。"
+  cover: "/cover/password-generator.png"
+
