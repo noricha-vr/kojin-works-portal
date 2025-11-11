@@ -87,6 +87,6 @@
 
 - title: "ランダムパスワード生成ツール"
   link: "https://password-generator.kojin.works/"
-  description: "完全クライアントサイドで動作する安全なパスワード生成ツール。Web Crypto APIを使用し、英数字、記号、UUID、HEXなど11種類のパスワードを生成。サーバー送信なし、完全無料。"
+  description: "完全クライアントサイドで動作する安全なパスワード生成ツール。英数字、記号、UUID、HEXなど11種類のパスワードを生成。サーバー送信なしで安心して利用できます。"
   cover: "/cover/password-generator.png"
 
