@@ -1,9 +1,13 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "kojin-works-portal",
       "dependencies": {
+        "@fontsource/dela-gothic-one": "5.2.7",
+        "@fontsource/ibm-plex-mono": "5.2.7",
+        "@fontsource/zen-kaku-gothic-new": "5.2.7",
         "@types/js-yaml": "^4.0.9",
         "js-yaml": "^4.1.0",
         "next": "15.3.7",
@@ -54,6 +58,12 @@
     "@eslint/object-schema": ["@eslint/object-schema@2.1.6", "", {}, "sha512-RBMg5FRL0I0gs51M/guSAj5/e14VQ4tpZnQNWwuDT66P14I43ItmPfIZRhO9fUVIPOAQXU47atlywZ/czoqFPA=="],
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.2.8", "", { "dependencies": { "@eslint/core": "^0.13.0", "levn": "^0.4.1" } }, "sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA=="],
+
+    "@fontsource/dela-gothic-one": ["@fontsource/dela-gothic-one@5.2.7", "", {}, "sha512-swkcFgr2HjPWbY7dGP/9H7zXePtwF6C5ASLriFSZ02nAh6zjUIudwz8TBWQu9mIXfbgWnvokZ0PjP2FWQGGIWQ=="],
+
+    "@fontsource/ibm-plex-mono": ["@fontsource/ibm-plex-mono@5.2.7", "", {}, "sha512-MKAb8qV+CaiMQn2B0dIi1OV3565NYzp3WN5b4oT6LTkk+F0jR6j0ZN+5BKJiIhffDC3rtBULsYZE65+0018z9w=="],
+
+    "@fontsource/zen-kaku-gothic-new": ["@fontsource/zen-kaku-gothic-new@5.2.7", "", {}, "sha512-tfGiyBqeeBjUURHm+RIuBJCxIKhZFp46/+LEc+zCxR4sLslKwlVpWda0ZOnX/mTvOHpfr4DYjiV/pVosRXHWaw=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 

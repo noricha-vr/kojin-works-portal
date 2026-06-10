@@ -15,9 +15,9 @@
   --color-rose: #ff5da2;
   --color-amber: #ffb02e;
 
-  --font-display: var(--font-dela);
-  --font-body: var(--font-zen);
-  --font-mono: var(--font-plex);
+  --font-display: "Dela Gothic One", "Zen Kaku Gothic New", sans-serif;
+  --font-body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
 html {
