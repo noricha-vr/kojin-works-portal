@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  scroll-behavior: smooth;
-}
+/* =========================================
+   デザイントークン — 「真夜中の遊び場」
+   深い藍のダークベースにネオンポップの4色
+   ========================================= */
+@theme {
+  --color-ink: #0b0e1a;
+  --color-ink-2: #121831;
+  --color-line: #25304f;
+  --color-snow: #f2f4ff;
+  --color-dim: #9aa6cf;
+  --color-lime: #c8f135;
+  --color-aqua: #4de8d2;
+  --color-rose: #ff5da2;
+  --color-amber: #ffb02e;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-dela);
+  --font-body: var(--font-zen);
+  --font-mono: var(--font-plex);
 }
 
 html {
@@ -25,7 +25,266 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-ink);
+  color: var(--color-snow);
+  /* 方眼紙グリッド + 画面上部のネオングロー（作業机のブループリント感） */
+  background-image:
+    radial-gradient(1100px 540px at 12% -10%, rgba(77, 232, 210, 0.1), transparent 60%),
+    radial-gradient(900px 500px at 88% 2%, rgba(255, 93, 162, 0.09), transparent 60%),
+    linear-gradient(to right, rgba(154, 166, 207, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(154, 166, 207, 0.06) 1px, transparent 1px);
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+  /* 傾けたマーキー帯（幅110%）による横スクロールを防ぐ */
+  overflow-x: hidden;
+}
+
+/* フィルムグレイン。全面オーバーレイで安っぽいフラットさを消す */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: var(--color-lime);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 3px;
+}
+
+/* =========================================
+   タイポグラフィ演出
+   ========================================= */
+
+/* 縁取り文字（塗りなし）。Dela Gothic One と組み合わせてポップに */
+.text-outline-lime {
+  -webkit-text-stroke: 2px var(--color-lime);
+  color: transparent;
+}
+
+.text-outline-faint {
+  -webkit-text-stroke: 2px rgba(242, 244, 255, 0.25);
+  color: transparent;
+}
+
+/* text-stroke 非対応ブラウザでは塗りにフォールバック */
+@supports not (-webkit-text-stroke: 1px black) {
+  .text-outline-lime {
+    color: var(--color-lime);
+  }
+  .text-outline-faint {
+    color: rgba(242, 244, 255, 0.25);
+  }
+}
+
+/* =========================================
+   モーション
+   ========================================= */
+
+/* ロード時のスタッガード出現（ヒーロー用） */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(34px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  opacity: 0;
+  animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+/* スクロール出現（IntersectionObserver が .is-visible を付与） */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* 浮遊するカバー画像のふわふわ */
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--tilt, 0deg));
+  }
+  50% {
+    transform: translateY(-14px) rotate(var(--tilt, 0deg));
+  }
+}
+
+.floaty {
+  animation: bob 7s ease-in-out infinite;
+  animation-delay: var(--bob-delay, 0s);
+}
+
+/* 無限マーキー（中身を2セット並べて -50% 移動でループ） */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll var(--marquee-speed, 46s) linear infinite;
+}
+
+/* 回転する円形バッジ */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 16s linear infinite;
+}
+
+/* ブランドロゴのカーソル明滅 */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1.2s steps(1) infinite;
+}
+
+/* スクロールインジケーターの伸び縮みライン */
+@keyframes scroll-line {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.scroll-line {
+  animation: scroll-line 2s ease-in-out infinite;
+}
+
+/* =========================================
+   プロジェクトカード
+   ========================================= */
+
+/* 3Dチルト + ホバーでアクセント色のハードシャドウ */
+.tilt-card {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg))
+    translateY(var(--lift, 0px));
+  transition:
+    transform 0.16s ease-out,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  will-change: transform;
+}
+
+.tilt-card:hover {
+  --lift: -8px;
+  border-color: var(--accent, var(--color-lime));
+  box-shadow: 10px 12px 0 0 var(--accent, var(--color-lime));
+}
+
+/* カバー画像を斜めに走る光のスイープ */
+.shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transform: translateX(-130%) skewX(-18deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.group:hover .shine::after {
+  transform: translateX(130%);
+}
+
+/* カード右下の矢印サークル */
+.card-arrow {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: 2px solid var(--accent, var(--color-lime));
+  color: var(--accent, var(--color-lime));
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.tilt-card:hover .card-arrow {
+  background-color: var(--accent, var(--color-lime));
+  color: var(--color-ink);
+  transform: rotate(-45deg);
+}
+
+/* =========================================
+   アクセシビリティ: モーション低減設定を尊重
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
+    opacity: 1;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .floaty,
+  .marquee-track,
+  .spin-slow,
+  .blink,
+  .scroll-line {
+    animation: none;
+  }
+  .tilt-card {
+    transform: none !important;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .shine::after {
+    display: none;
+  }
 }

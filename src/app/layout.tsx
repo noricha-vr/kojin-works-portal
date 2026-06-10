@@ -1,16 +1,34 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Dela_Gothic_One, IBM_Plex_Mono, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// 見出し用の極太ディスプレイフォント（日本語グリフはunicode-range分割で配信される）
+const delaGothic = Dela_Gothic_One({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-dela",
+  display: "swap",
+  preload: false,
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const zenKaku = Zen_Kaku_Gothic_New({
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
+  variable: "--font-zen",
+  display: "swap",
+  preload: false,
 });
+
+const plexMono = IBM_Plex_Mono({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+  variable: "--font-plex",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#0b0e1a",
+};
 
 export const metadata: Metadata = {
   title: "Kojin Works - 個人開発プロジェクトまとめ",
@@ -49,8 +67,12 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${delaGothic.variable} ${zenKaku.variable} ${plexMono.variable} font-body antialiased`}
       >
+        {/* JS無効環境でもコンテンツが見えるように出現アニメーションを無効化 */}
+        <noscript>
+          <style>{`.reveal,.rise{opacity:1 !important;transform:none !important;animation:none !important}`}</style>
+        </noscript>
         {children}
       </body>
     </html>
