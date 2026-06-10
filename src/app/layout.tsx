@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+// next/font/google はビルド時にGoogle Fontsへ大量フェッチが走り、CIで失敗しやすいため
+// @fontsource による自己ホスト（バージョン固定・ビルド時ネットワーク依存なし）を採用
+import "@fontsource/dela-gothic-one/400.css";
+import "@fontsource/zen-kaku-gothic-new/400.css";
+import "@fontsource/zen-kaku-gothic-new/500.css";
+import "@fontsource/zen-kaku-gothic-new/700.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/600.css";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export const viewport: Viewport = {
+  themeColor: "#0b0e1a",
+};
 
 export const metadata: Metadata = {
   title: "Kojin Works - 個人開発プロジェクトまとめ",
@@ -48,9 +49,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="font-body antialiased">
+        {/* JS無効環境でもコンテンツが見えるように出現アニメーションを無効化 */}
+        <noscript>
+          <style>{`.reveal,.rise{opacity:1 !important;transform:none !important;animation:none !important}`}</style>
+        </noscript>
         {children}
       </body>
     </html>

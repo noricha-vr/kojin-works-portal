@@ -1,17 +1,23 @@
 import { loadProjects } from "../../lib/utils/projectLoader";
-import Hero from "./components/Hero";
-import ProjectsList from "./components/ProjectsList";
 import Footer from "./components/Footer";
+import GlowCursor from "./components/GlowCursor";
+import Hero from "./components/Hero";
+import Marquee from "./components/Marquee";
+import ProjectsList from "./components/ProjectsList";
 
 export default function Home() {
-  // サーバーサイドでプロジェクト情報を読み込む
+  // サーバーサイド（ビルド時）でプロジェクト情報を読み込む
   const projects = loadProjects();
 
   return (
-    <div>
-      <Hero />
-      <ProjectsList projects={projects} />
+    <>
+      <GlowCursor />
+      <main>
+        <Hero projects={projects} />
+        <Marquee titles={projects.map((project) => project.title)} />
+        <ProjectsList projects={projects} />
+      </main>
       <Footer />
-    </div>
+    </>
   );
-} 
+}

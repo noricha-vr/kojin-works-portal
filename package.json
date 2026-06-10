@@ -6,15 +6,18 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/dela-gothic-one": "5.2.7",
+    "@fontsource/ibm-plex-mono": "5.2.7",
+    "@fontsource/zen-kaku-gothic-new": "5.2.7",
     "@types/js-yaml": "^4.0.9",
     "js-yaml": "^4.1.0",
-    "next": "15.3.6",
+    "next": "15.3.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.34.3"
