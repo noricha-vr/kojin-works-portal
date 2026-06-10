@@ -25,6 +25,7 @@ export default function Marquee({ titles }: MarqueeProps) {
         >
           {[0, 1].map((copy) => (
             <div key={copy} className="flex items-center">
+              {/* -50%ループの継ぎ目を出さないため、1セット幅が最大ビューポート幅を超えるまで繰り返す */}
               {Array.from({ length: 5 }, () => CATEGORY_TAGS).flat().map((tag, i) => (
                 <span
                   key={`${copy}-${i}`}

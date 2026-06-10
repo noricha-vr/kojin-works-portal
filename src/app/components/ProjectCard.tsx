@@ -55,6 +55,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
     <a
       ref={cardRef}
       href={project.link}
+      target="_blank"
       rel="noopener noreferrer"
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
