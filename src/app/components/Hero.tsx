@@ -31,13 +31,13 @@ export default function Hero({ projects }: HeroProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const floatProjects = pickFloatProjects(projects, FLOAT_SLOTS.length);
 
-  // マウス位置を -1〜1 に正規化してCSS変数へ流し、浮遊カバーをパララックスさせる
+  // マウス位置を -1〜1 に正規化してCSS変数へ流し、浮遊カバーをパララックスさせる。
+  // OS設定（モーション低減）やポインタ種別の切り替えにはリロードなしで追従する
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
-    const fine = window.matchMedia("(pointer: fine)").matches;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!fine || reduced) return;
+    const fine = window.matchMedia("(pointer: fine)");
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     let raf = 0;
     const onMove = (e: PointerEvent) => {
@@ -50,8 +50,22 @@ export default function Hero({ projects }: HeroProps) {
         section.style.setProperty("--my", my.toFixed(3));
       });
     };
-    section.addEventListener("pointermove", onMove, { passive: true });
+    // 同一リスナーの重複登録はブラウザ側で無視されるため、syncは冪等
+    const sync = () => {
+      if (fine.matches && !reduced.matches) {
+        section.addEventListener("pointermove", onMove, { passive: true });
+      } else {
+        section.removeEventListener("pointermove", onMove);
+        section.style.setProperty("--mx", "0");
+        section.style.setProperty("--my", "0");
+      }
+    };
+    sync();
+    fine.addEventListener("change", sync);
+    reduced.addEventListener("change", sync);
     return () => {
+      fine.removeEventListener("change", sync);
+      reduced.removeEventListener("change", sync);
       section.removeEventListener("pointermove", onMove);
       cancelAnimationFrame(raf);
     };

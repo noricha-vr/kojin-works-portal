@@ -16,10 +16,18 @@ export default function GlowCursor() {
   const glowRef = useRef<HTMLDivElement>(null);
   const [enabled, setEnabled] = useState(false);
 
+  // OS設定（モーション低減）やポインタ種別の切り替えにリロードなしで追従する
   useEffect(() => {
-    const fine = window.matchMedia("(pointer: fine)").matches;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setEnabled(fine && !reduced);
+    const fine = window.matchMedia("(pointer: fine)");
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setEnabled(fine.matches && !reduced.matches);
+    update();
+    fine.addEventListener("change", update);
+    reduced.addEventListener("change", update);
+    return () => {
+      fine.removeEventListener("change", update);
+      reduced.removeEventListener("change", update);
+    };
   }, []);
 
   useEffect(() => {
