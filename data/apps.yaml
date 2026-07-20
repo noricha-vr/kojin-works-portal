@@ -90,3 +90,8 @@
   description: "完全クライアントサイドで動作する安全なパスワード生成ツール。英数字、記号、UUID、HEXなど11種類のパスワードを生成。サーバー送信なしで安心して利用できます。"
   cover: "/cover/password-generator.png"
 
+- title: "オレオレBench"
+  link: "https://oreorebench.kojin.works/"
+  description: "同じプロンプトを異なるLLMに投げて出力を見比べる、独断と偏見のベンチマークサイト。LP・ゲーム・フォーム化など多角的なテーマで各AIの個性を実感できます。"
+  cover: "/cover/oreore-bench.png"
+
