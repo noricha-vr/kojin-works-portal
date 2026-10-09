@@ -1,4 +1,4 @@
-# Dependabot の設定（週 1 回の依存更新。CI が無いリポなので自動マージは入れない）
+# Dependabot の設定（週 1 回の依存更新。patch / minor は dependabot-automerge.yml の条件を満たせば自動マージする）
 version: 2
 updates:
   - package-ecosystem: "bun"
@@ -8,12 +8,25 @@ updates:
       day: "monday"
       time: "06:00"
       timezone: "Asia/Tokyo"
-    open-pull-requests-limit: 2
+    open-pull-requests-limit: 3
     groups:
       minor-and-patch:                 # 週 1 回の更新は patch と minor を 1 本にまとめる
         applies-to: version-updates
         update-types: ["minor", "patch"]
       security:                        # security updates も同じエコシステムで 1 本にまとめる
         applies-to: security-updates
+        update-types: ["minor", "patch"]
+    labels: ["dependencies"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 2
+    groups:
+      actions:
         update-types: ["minor", "patch"]
     labels: ["dependencies"]
