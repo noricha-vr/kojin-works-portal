@@ -16,7 +16,7 @@
     "@fontsource/ibm-plex-mono": "5.2.7",
     "@fontsource/zen-kaku-gothic-new": "5.2.7",
     "@types/js-yaml": "^4.0.9",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.3.2",
     "next": "15.3.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
