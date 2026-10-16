@@ -51,4 +51,4 @@ bun run lint     # ESLintによるコード品質チェック
 ## 注意事項
 - 画像最適化は無効（`images.unoptimized: true`）なので、適切なサイズで画像を用意すること
 - テストコマンドは未実装
-- Node.js 20.0.0以上が必要
+- Node.js 20.9.0以上が必要（sharp 0.35 の要件。`.node-version` は 20.20.2）
