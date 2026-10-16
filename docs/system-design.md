@@ -112,7 +112,7 @@ kojin-works-portal/
 ├── eslint.config.mjs
 ├── next-env.d.ts
 ├── next.config.ts
-├── package-lock.json
+├── bun.lock
 ├── package.json
 ├── postcss.config.mjs
 ├── README.md
@@ -125,7 +125,7 @@ kojin-works-portal/
     * 新しいプロジェクトを追加する場合や既存の情報を更新する場合は、`data/apps.yaml` ファイルを直接編集します。
     * アイコン画像は `public/icons/` ディレクトリに追加・配置します。
 2.  **ローカルでの開発・確認:**
-    * `npm run dev` (または `yarn dev`) コマンドでローカル開発サーバーを起動し、変更内容を確認します。
+    * `bun run dev` コマンドでローカル開発サーバーを起動し、変更内容を確認します。
 3.  **デプロイ:**
     * 変更内容をGitでコミットし、連携しているGitHubリポジトリの指定ブランチ（例: `main`）にプッシュします。
     * Cloudflare Pagesがプッシュを検知し、自動的にビルドプロセス（`next build`）を実行し、生成された静的ファイル (`out` ディレクトリ）をデプロイします。

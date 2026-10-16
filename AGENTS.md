@@ -8,10 +8,10 @@ GitHubリポジトリ: https://github.com/noricha-vr/kojin-works-portal
 
 ## 開発コマンド
 ```bash
-npm run dev      # 開発サーバー起動（Turbopack使用）
-npm run build    # 静的サイトのビルド
-npm run start    # ビルド済みサイトのプレビュー
-npm run lint     # ESLintによるコード品質チェック
+bun run dev      # 開発サーバー起動（Turbopack使用）
+bun run build    # 静的サイトのビルド
+bun run start    # ビルド済みサイトのプレビュー
+bun run lint     # ESLintによるコード品質チェック
 ```
 
 ## アーキテクチャ
