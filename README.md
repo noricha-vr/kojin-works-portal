@@ -33,12 +33,12 @@ https://kojin.works/
 
 2. 依存パッケージをインストール:
    ```bash
-   npm install
+   bun install
    ```
 
 3. 開発サーバーを起動:
    ```bash
-   npm run dev
+   bun run dev
    ```
 
 4. ブラウザで `http://localhost:3000` にアクセスして確認
