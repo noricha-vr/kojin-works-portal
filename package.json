@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack -H 0.0.0.0",
-    "build": "bun run typecheck && next build",
+    "build": "node node_modules/@typescript/native/bin/tsc --noEmit && next build",
     "start": "next start",
     "lint": "eslint src lib eslint.config.mjs next.config.ts",
     "typecheck": "node node_modules/@typescript/native/bin/tsc --noEmit"
