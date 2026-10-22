@@ -1,6 +1,26 @@
 # kojin.works プロジェクト一覧
 # 個人開発プロジェクトの情報を記載するYAMLファイル
 
+- title: "VRC技術学術系Hub"
+  link: "https://vrc-ta-hub.com/"
+  description: "VRChatで開催されている技術学術系イベントの情報や過去の発表資料、動画をまとめたポータルサイトです。"
+  cover: "https://data.vrc-ta-hub.com/images/twitter-negipan-1600.jpeg"
+
+- title: "経理お助けたい"
+  link: "https://keiriotasuketai.com/"
+  description: "クレジットカードの不明な支払い元を調べるサービスです。"
+  cover: "/cover/keiriotasuketai.png"
+
+- title: "ちょいキャス"
+  link: "https://choicast.com/"
+  description: "ブラウザの画面共有を、VRChatのビデオプレイヤーで再生できるライブ配信にして配れる無料サービスです。OBS不要、PC・Questで使えます。"
+  cover: "/cover/choicast.png"
+
+- title: "HackType"
+  link: "https://hacktype.kojin.works/"
+  description: "本格的なターミナル画面で繰り広げられるタイピングアドベンチャー。実際のハッキングコマンドを学びながら、サイバーセキュリティの世界を体験できます。"
+  cover: "/cover/hacktype.png"
+
 - title: "WebScreen"
   link: "https://web-screen.net/"
   description: "VRChatにWebページや、写真、PDFを表示するための動画変換サービスです。"
@@ -11,87 +31,57 @@
   description: "美しい瞬間を友達や家族と共有できる、使いやすい写真共有プラットフォームです。"
   cover: "/cover/atenainsatsu.png"
 
-
-- title: "画像モザイク加工ツール"
-  link: "https://mosaic.kojin.works/"
-  description: "ブラウザで簡単にモザイク加工ができます。"
-  cover: "/cover/mosaic.png"
-
-- title: "バーチャルな茨城で茨城ダッシュ"
-  link: "https://ibaraki-dash.kojin.works/"
-  description: "青信号になったら即ダッシュ！バーチャルな茨城を舞台に最高スコアを目指すブラウザゲームです。"
-  cover: "/cover/ibaraki-dash.png"
-
-
-- title: "経理お助けたい"
-  link: "https://keiriotasuketai.com/"
-  description: "クレジットカードの不明な支払い元を調べるサービスです。"
-  cover: "/cover/keiriotasuketai.png"
+- title: "個人開発集会"
+  link: "https://sites.google.com/view/vrc-personal-development/%E3%83%9B%E3%83%BC%E3%83%A0"
+  description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
+  cover: "/cover/kojinkaihatsu.png"
 
 - title: "Twitter Blocker"
   link: "https://chrome.google.com/webstore/devconsole/41a0cbc6-8ea3-4bb4-bebe-15d39727a8b4/bannejppggodpoeahohfhkamdpegcmao/edit"
   description: "ブラウザ上のTwitterの閲覧時間を制限し、閲覧時間をグラフで管理できます。"
   cover: "/cover/twitter-blocker.png"
 
-
-- title: "VRC技術学術系Hub"
-  link: "https://vrc-ta-hub.com/"
-  description: "VRChatで開催されている技術学術系イベントの情報や過去の発表資料、動画をまとめたポータルサイトです。"
-  cover: "https://data.vrc-ta-hub.com/images/twitter-negipan-1600.jpeg"
-
-- title: "個人開発集会"
-  link: "https://sites.google.com/view/vrc-personal-development/%E3%83%9B%E3%83%BC%E3%83%A0"
-  description: "隔週木曜日に個人開発集会をVRChatで開催しています。"
-  cover: "/cover/kojinkaihatsu.png"
-
-- title: "HackType"
-  link: "https://hacktype.kojin.works/"
-  description: "本格的なターミナル画面で繰り広げられるタイピングアドベンチャー。実際のハッキングコマンドを学びながら、サイバーセキュリティの世界を体験できます。"
-  cover: "/cover/hacktype.png"
-
-- title: "Context Generator"
-  link: "https://context-generator.kojin.works/"
-  description: "AIツールに提供するコンテキスト情報を簡単に生成できるツール。プロジェクトの概要や技術仕様を自動的に整理します。"
-  cover: "/cover/context-generator.png"
-
-- title: "ユートピア"
-  link: "https://utopia.kojin.works/"
-  description: "素直な想いを彩る場所。気持ちをシェアして、みんなで楽しめる新しいSNSサービスです。"
-  cover: "/cover/utopia.png"
-
-- title: "UtaEcho"
-  link: "https://utaecho.kojin.works/"
-  description: "歌声を響かせる新しい体験。音楽を通じて人々をつなぐサービスです。"
-  cover: "/cover/utaecho.png"
-
 - title: "まるごと翻訳"
   link: "https://marugoto-honyaku.kojin.works/"
   description: "長文でも高速翻訳、履歴も自動保存。プログラミング言語が混在していても正確に翻訳できる強力な翻訳ツールです。"
   cover: "/cover/marugoto-honyaku.png"
-
-
-- title: "Claude Code Subagents Workflow"
-  link: "https://github.com/noricha-vr/claude-code-subagents-workflow"
-  description: "Claude Code の Subagents を使った自動実装ワークフローのテンプレート"
-  cover: "/cover/claude-code-subagents-workflow.png"
-
-- title: "Video to MP3 Converter"
-  link: "https://video-to-mp3-converter.kojin.works/"
-  description: "動画ファイルから音声を抽出し、高品質なMP3に変換する無料のオンラインツール。ブラウザ上で完結し、プライバシーも安全です。"
-  cover: "/cover/video-to-mp3-converter.png"
 
 - title: "リサイズくん"
   link: "https://resize.kojin.works/"
   description: "画像をJPEG/PNG/AVIF形式にリサイズする無料オンラインツール。ブラウザ内で完結するため、プライバシーが保護されます。"
   cover: "/cover/image-resizer.png"
 
+- title: "画像モザイク加工ツール"
+  link: "https://mosaic.kojin.works/"
+  description: "ブラウザで簡単にモザイク加工ができます。"
+  cover: "/cover/mosaic.png"
+
 - title: "ランダムパスワード生成"
   link: "https://password-generator.kojin.works/"
   description: "完全クライアントサイドで動作する安全なパスワード生成ツール。英数字、記号、UUID、HEXなど11種類のパスワードを生成。サーバー送信なしで安心して利用できます。"
   cover: "/cover/password-generator.png"
 
+- title: "Context Generator"
+  link: "https://context-generator.kojin.works/"
+  description: "AIツールに提供するコンテキスト情報を簡単に生成できるツール。プロジェクトの概要や技術仕様を自動的に整理します。"
+  cover: "/cover/context-generator.png"
 
-- title: "ちょいキャス"
-  link: "https://choicast.com/"
-  description: "ブラウザの画面共有を、VRChatのビデオプレイヤーで再生できるライブ配信にして配れる無料サービスです。OBS不要、PC・Questで使えます。"
-  cover: "/cover/choicast.png"
+- title: "Video to MP3 Converter"
+  link: "https://video-to-mp3-converter.kojin.works/"
+  description: "動画ファイルから音声を抽出し、高品質なMP3に変換する無料のオンラインツール。ブラウザ上で完結し、プライバシーも安全です。"
+  cover: "/cover/video-to-mp3-converter.png"
+
+- title: "ユートピア"
+  link: "https://utopia.kojin.works/"
+  description: "素直な想いを彩る場所。気持ちをシェアして、みんなで楽しめる新しいSNSサービスです。"
+  cover: "/cover/utopia.png"
+
+- title: "Claude Code Subagents Workflow"
+  link: "https://github.com/noricha-vr/claude-code-subagents-workflow"
+  description: "Claude Code の Subagents を使った自動実装ワークフローのテンプレート"
+  cover: "/cover/claude-code-subagents-workflow.png"
+
+- title: "バーチャルな茨城で茨城ダッシュ"
+  link: "https://ibaraki-dash.kojin.works/"
+  description: "青信号になったら即ダッシュ！バーチャルな茨城を舞台に最高スコアを目指すブラウザゲームです。"
+  cover: "/cover/ibaraki-dash.png"
