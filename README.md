@@ -67,3 +67,7 @@ GitHubリポジトリにプッシュすると、Cloudflare Pagesが自動的に�
 ## ライセンス
 
 [ライセンス情報]
+
+## 開発依存の互換性
+
+`bun run typecheck` は TypeScript 7.0.2 を明示して実行します。Next.js 15 と ESLint が利用するコンパイラAPIは6.0.3に固定し、ネイティブコンパイラとは分けています。`bun run lint` は旧 next lint と同じ src / lib、および設定ファイルをESLint CLIで検査します。Next.js本体と公開データはこの更新で変更していません。

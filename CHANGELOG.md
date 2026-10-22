@@ -15,3 +15,8 @@
   - URL: https://utaecho.kojin.works/
   - 説明: 歌声を響かせる新しい体験。音楽を通じて人々をつなぐサービスです。
   - カバー画像: /cover/utaecho.png
+## 2026-10-22
+
+### Fixed
+
+- ESLint 10 / eslint-config-next 16 のflat設定とTypeScript 7型検査を既存Next.js 15へ整合。コンパイラAPIは対応する6系を維持。
