@@ -90,3 +90,8 @@
   description: "完全クライアントサイドで動作する安全なパスワード生成ツール。英数字、記号、UUID、HEXなど11種類のパスワードを生成。サーバー送信なしで安心して利用できます。"
   cover: "/cover/password-generator.png"
 
+
+- title: "ちょいキャス"
+  link: "https://choicast.com/"
+  description: "ブラウザの画面共有を、VRChatのビデオプレイヤーで再生できるライブ配信にして配れる無料サービスです。OBS不要、PC・Questで使えます。"
+  cover: "/cover/choicast.png"
