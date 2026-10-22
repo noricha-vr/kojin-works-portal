@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=20.9.0"
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "scripts": {
     "dev": "next dev --turbopack -H 0.0.0.0",
-    "build": "next build",
+    "build": "bun run typecheck && next build",
     "start": "next start",
     "lint": "eslint src lib eslint.config.mjs next.config.ts",
     "typecheck": "node node_modules/@typescript/native/bin/tsc --noEmit"

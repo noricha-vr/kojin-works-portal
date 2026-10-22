@@ -71,3 +71,5 @@ GitHubリポジトリにプッシュすると、Cloudflare Pagesが自動的に�
 ## 開発依存の互換性
 
 `bun run typecheck` は TypeScript 7.0.2 を明示して実行します。Next.js 15 と ESLint が利用するコンパイラAPIは6.0.3に固定し、ネイティブコンパイラとは分けています。`bun run lint` は旧 next lint と同じ src / lib、および設定ファイルをESLint CLIで検査します。Next.js本体と公開データはこの更新で変更していません。
+
+Node.js は ESLint 10 の要件（20.19以上の20系、22.13以上の22系、または24以上）を使用します。`.node-version` は対応済みの20.20.2です。本番ビルドの先頭で型検査も実行します。
