@@ -1,5 +1,5 @@
-# PR ごとに本番（Cloudflare Pages: Node は .node-version、bun 1.2.15 で bun install --frozen-lockfile → npx next build）と同じ入れ方でビルドする
-# next build が lint と型チェックも行う
+# PRごとに固定依存を導入し、TypeScript 7型検査とNext.jsビルドを行う。
+# Next.js内部のlint・型検査は互換API 6を使用する。
 name: ci
 
 on:
@@ -26,4 +26,4 @@ jobs:
         with:
           bun-version: "1.2.15"
       - run: bun install --frozen-lockfile
-      - run: npx next build
+      - run: bun run build
