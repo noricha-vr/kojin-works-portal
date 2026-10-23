@@ -37,3 +37,7 @@
 ### Fixed
 
 - ESLint 10 / eslint-config-next 16 のflat設定とTypeScript 7型検査を既存Next.js 15へ整合。コンパイラAPIは対応する6系を維持。
+
+## 2026-10-24
+
+- Next.js を 15.5.28 に更新し、画像最適化と Server Actions に関するセキュリティ修正を取り込みました。静的サイト出力と既存の表示は維持します。
