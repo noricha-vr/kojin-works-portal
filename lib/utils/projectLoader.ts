@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import yaml from 'js-yaml';
+import { load } from 'js-yaml';
 import { Project } from '../types';
 
 // javascript: 等の危険スキームが <a href> / <img src> に流れるのを防ぐ防御層
@@ -30,7 +30,7 @@ export function loadProjects(): Project[] {
     
     // YAMLファイルを読み込む
     const fileContents = fs.readFileSync(yamlPath, 'utf8');
-    const projects = yaml.load(fileContents) as Project[];
+    const projects = load(fileContents) as Project[];
     
     // 必須フィールドの存在チェック + URLスキーム検証
     return projects.filter(project => {
